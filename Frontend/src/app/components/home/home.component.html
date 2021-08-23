@@ -1,15 +1,11 @@
 <div>
   <!-- <div class="container"> -->
-    <h1 class="bottom-left" style="font-size:50px">GALIERIA Shopping</h1>
-    <!-- <img src="../assets/img/welcome.jpg" class="img-fluid img-size" alt="Responsive image" width=100%> -->
-    <!-- <div class="bottom-left">GALIERIA Shopping</div> -->
+    <h1 class="bottom-left" style="font-size:30px">Shopping</h1>
+
 
   <div *ngIf="products.length > 0; then thenBlock else elseBlock"></div>
   <ng-template #thenBlock>
-    <!-- <div class="search-product">
-        <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
-            placeholder=" Start searching for a products by name or Prices .....">
-    </div> -->
+
     <div class="container mt-5 mb-5">
       <div class="row">
 
@@ -20,7 +16,7 @@
                 alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">{{product.name}}</h5>
-                <p class="card-text">{{product.price}} EGP</p>
+                <p class="card-text">$ {{product.price}} </p>
                 <a [routerLink]="['/products',product.id]" class="btn btn-primary">Go TO Product</a>
               </div>
             </div>

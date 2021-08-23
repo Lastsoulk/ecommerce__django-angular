@@ -84,9 +84,9 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'E_commerce',#dTest
-        'USER':'django',
-        'PASSWORD':'1234',
+        'NAME': 'dbDistribuidos',#dTest
+        'USER':'root',
+        'PASSWORD':'123456',
         'HOST':'localhost',
     }
 }
